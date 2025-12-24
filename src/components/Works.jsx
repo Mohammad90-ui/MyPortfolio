@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const projects = [
     { title: "PrepInter", category: "AI Application", year: "2024", description: "An AI-powered platform for mock interviews, real-time sessions, and interview preparation.", img: "https://images.unsplash.com/photo-1629904853716-f004c63841e6?q=80&w=1000&auto=format&fit=crop" },
@@ -124,10 +125,12 @@ const Works = () => {
                 </div>
 
                 <div className="mt-24 text-center">
-                    <a href="/my-works" className="inline-flex items-center gap-2 px-12 py-5 bg-white text-black rounded-full font-bold uppercase text-sm hover:bg-[#CF9EFF] hover:text-black transition-all duration-300 clickable hover:scale-105">
-                        View All Projects
-                        <span>↗</span>
-                    </a>
+                    <div className="mt-24 text-center">
+                        <Link to="/my-works" className="inline-flex items-center gap-2 px-12 py-5 bg-white text-black rounded-full font-bold uppercase text-sm hover:bg-[#CF9EFF] hover:text-black transition-all duration-300 clickable hover:scale-105">
+                            View All Projects
+                            <span>↗</span>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>
