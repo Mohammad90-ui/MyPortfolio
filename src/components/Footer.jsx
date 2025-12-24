@@ -19,7 +19,7 @@ const Footer = () => {
                     >
                         Have an idea?
                     </motion.p>
-                    <a href="mailto:mohammadhasan707053@gmail.com" className="inline-block relative z-30">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammadhasan707053@gmail.com" target="_blank" rel="noopener noreferrer" className="inline-block relative z-30">
                         <motion.h2
                             initial={{ y: 100, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
@@ -34,7 +34,7 @@ const Footer = () => {
                 {/* Bottom Info */}
                 <div className="flex flex-col md:flex-row justify-between items-end mt-24 border-t border-gray-800 pt-12 relative z-20">
                     <div className="flex flex-col gap-2">
-                        <a href="mailto:mohammadhasan707053@gmail.com" className="text-2xl md:text-3xl font-bold hover:text-[#CF9EFF] transition-colors clickable">mohammadhasan707053@gmail.com</a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammadhasan707053@gmail.com" target="_blank" rel="noopener noreferrer" className="text-2xl md:text-3xl font-bold hover:text-[#CF9EFF] transition-colors clickable">mohammadhasan707053@gmail.com</a>
                         <p className="text-gray-500 md:text-lg">+91 7070530556</p>
                     </div>
 

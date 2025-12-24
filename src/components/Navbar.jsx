@@ -38,7 +38,7 @@ const Navbar = () => {
 
                 <div className="flex items-center gap-4">
                     <a
-                        href="mailto:mohammadhasan707053@gmail.com"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammadhasan707053@gmail.com" target="_blank" rel="noopener noreferrer"
                         className="hidden md:block px-6 py-3 bg-[#CF9EFF] text-black rounded-full text-sm font-bold hover:bg-white transition-colors duration-300 clickable shadow-[0_0_20px_rgba(207,158,255,0.4)]"
                     >
                         Let's Talk
@@ -98,7 +98,7 @@ const Navbar = () => {
                             transition={{ delay: 0.8 }}
                             className="absolute bottom-12 flex flex-col items-center gap-4 text-sm text-gray-500 uppercase tracking-widest"
                         >
-                            <a href="mailto:mohammadhasan707053@gmail.com" className="hover:text-white transition-colors clickable">mohammadhasan707053@gmail.com</a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammadhasan707053@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors clickable">mohammadhasan707053@gmail.com</a>
                             <div className="flex gap-6">
 
                             </div>
