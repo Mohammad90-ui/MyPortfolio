@@ -124,7 +124,7 @@ const Works = () => {
                 </div>
 
                 <div className="mt-24 text-center">
-                    <a href="/works" className="inline-flex items-center gap-2 px-12 py-5 bg-white text-black rounded-full font-bold uppercase text-sm hover:bg-[#CF9EFF] hover:text-black transition-all duration-300 clickable hover:scale-105">
+                    <a href="/my-works" className="inline-flex items-center gap-2 px-12 py-5 bg-white text-black rounded-full font-bold uppercase text-sm hover:bg-[#CF9EFF] hover:text-black transition-all duration-300 clickable hover:scale-105">
                         View All Projects
                         <span>↗</span>
                     </a>
