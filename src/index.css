@@ -1,0 +1,58 @@
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500,400,300&f[]=satoshi@900,700,500,400&display=swap');
+@import "tailwindcss";
+
+body {
+  background-color: #E7E7E7;
+  color: #000;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-x: hidden;
+  cursor: auto !important;
+}
+
+/* Emergency fix for interactivity */
+a,
+button,
+.clickable,
+input,
+textarea {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  z-index: 50;
+  /* Ensure they sit above non-z-indexed siblings if context allows */
+}
+
+::selection {
+  background-color: #000;
+  color: #E7E7E7;
+}
+
+.font-cabinet {
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.font-satoshi {
+  font-family: 'Satoshi', sans-serif;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
