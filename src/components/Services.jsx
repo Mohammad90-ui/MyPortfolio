@@ -94,7 +94,7 @@ const Services = () => {
         <section
             ref={ref}
             id="services"
-            className="relative h-[400vh] bg-[#FAFAFA] rounded-t-[3rem]"
+            className="relative min-h-screen md:h-[400vh] bg-[#FAFAFA] rounded-t-[3rem]"
         >
             {/* ===== HEADER (NORMAL SCROLL) ===== */}
             <div className="px-6 md:px-16 pt-32 max-w-6xl">
@@ -106,9 +106,33 @@ const Services = () => {
                     </span>
                 </h2>
             </div>
+            {/* ===== MOBILE / TABLET FALLBACK ===== */}
+            <div className="md:hidden px-6 flex flex-col gap-6 mt-16">
+            {services.map((service, i) => (
+                <div
+                key={i}
+                className="h-auto flex flex-col gap-6 p-6 bg-[#F3F3F3] border border-gray-300 rounded-2xl clickable"
+                >
+                <div className="flex justify-between items-start">
+                    <div className="w-14 h-14 rounded-full bg-[#CF9EFF] flex items-center justify-center text-black">
+                    {service.icon}
+                    </div>
+                    <span className="text-xl text-gray-400">{service.num}</span>
+                </div>
+
+                <h3 className="text-2xl font-bold text-black">
+                    {service.title}
+                </h3>
+
+                <p className="text-gray-600 text-base leading-relaxed">
+                    {service.desc}
+                </p>
+                </div>
+            ))}
+            </div>
 
             {/* ===== STICKY HORIZONTAL SCROLL ===== */}
-            <div className="sticky top-0 h-screen flex items-center overflow-hidden mt-32 pointer-events-none">
+            <div className="hidden md:flex sticky top-0 h-screen items-center overflow-hidden mt-32 pointer-events-none">
                 <motion.div style={{ x }} className="flex pl-6 md:pl-16 pointer-events-auto">
                     {services.map((service, i) => (
                         <ServiceCard key={i} service={service} />
@@ -119,7 +143,9 @@ const Services = () => {
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                     <div className="w-[600px] h-[600px] bg-gradient-to-r from-[#CF9EFF]/20 to-purple-500/10 blur-[120px] rounded-full" />
                 </div>
+                
             </div>
+            <div className="md:hidden h-24"></div>
         </section>
     );
 };

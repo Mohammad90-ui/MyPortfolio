@@ -21,7 +21,7 @@ const projects = [
         description: "A pharma-focused AI chatbot that answers clinical trial queries using structured drug data and documented medical insights.",
         tech: ["Python", "FastAPI", "React", "AI", "FAISS", "Clinical Data"],
         image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=1200", // New Placeholder
-        link: "#",
+        link: "https://pharma-ai-cb.vercel.app/",
         repo: "https://github.com/Mohammad90-ui/Atrix_PharmaAI_chatbot.git"
     },
     {
@@ -48,7 +48,7 @@ const projects = [
         description: "A multilingual AI-powered advisory platform that provides farmers with real-time, context-aware guidance for crops, weather, and plant health.",
         tech: ["React", "Tailwind CSS", "Python", "FastAPI", "AI Assistant", "Computer Vision", "Multilingual Support", "Weather APIs"],
         image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop",
-        link: "#",
+        link: "https://agro-help-ai.vercel.app/",
         repo: "https://github.com/Mohammad90-ui/AgroHelp.git"
     },
     {
@@ -57,8 +57,17 @@ const projects = [
         description: "A modern movie discovery web app that allows users to search films, view trending titles, and explore detailed movie information.",
         tech: ["React", "Vite", "Tailwind CSS", "TMDB API", "Appwrite", "Debounced Search", "Responsive UI"],
         image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200&auto=format&fit=crop",
-        link: "#",
+        link: "https://movieapp-seven-pied.vercel.app/",
         repo: "https://github.com/Mohammad90-ui/MovieReactApp.git"
+    },
+    {
+        domain: "Portfolio",
+        title: "Portfolio",
+        description: "A modern portfolio website built with React and Tailwind CSS, featuring a clean and responsive design.",
+        tech: ["React", "Vite", "Tailwind CSS", "Responsive UI"],
+        image: "https://images.unsplash.com/photo-1545665277-5937489579f2?q=80&w=1200&auto=format&fit=crop",
+        link: "https://mohammadhasan.vercel.app/",
+        repo: "https://github.com/Mohammad90-ui/MyPortfolio.git"
     }
 ];
 

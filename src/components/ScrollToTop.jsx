@@ -1,19 +1,26 @@
-import { useEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
 
+    // Disable browser's default scroll restoration to avoid conflicts
     useEffect(() => {
-        // Immediate scroll
+        if ('scrollRestoration' in window.history) {
+            window.history.scrollRestoration = 'manual';
+        }
+    }, []);
+
+    useLayoutEffect(() => {
+        // Immediate scroll before paint
         window.scrollTo(0, 0);
         document.documentElement.scrollTop = 0;
         document.body.scrollTop = 0;
 
-        // Small delay to ensure it overrides any browser restoration or layout shifts
+        // Backup timeout for any async rendering or layout shifts
         const timeoutId = setTimeout(() => {
             window.scrollTo(0, 0);
-        }, 100);
+        }, 50);
 
         return () => clearTimeout(timeoutId);
     }, [pathname]);

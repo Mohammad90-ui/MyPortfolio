@@ -63,7 +63,7 @@ const Works = () => {
     };
 
     return (
-        <section id="works" ref={sectionRef} className="bg-[#FAFAFA] py-32 px-4 md:px-0 relative z-40 -mt-60 overflow-hidden min-h-[200vh]" onMouseMove={handleMouseMove}>
+        <section id="works" ref={sectionRef} className="bg-[#FAFAFA] py-32 px-4 md:px-0 relative z-40 md:-mt-60 overflow-hidden min-h-[200vh]" onMouseMove={handleMouseMove}>
 
             {/* Dark Overlay Transition */}
             <motion.div
